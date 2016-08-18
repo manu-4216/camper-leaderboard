@@ -1,9 +1,9 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var AppContainer = require('./containers/AppContainer');
+var App = require('./components/App');
 require('./main.scss');
 
 ReactDOM.render(
-  <AppContainer />,
+  <App />,
   document.getElementById('app')
 );
