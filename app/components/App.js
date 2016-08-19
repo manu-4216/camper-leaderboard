@@ -1,15 +1,15 @@
 var React = require('react');
-var Header = require('../components/Header');
-var Table = require('../components/Table');
-var Footer = require('../components/Footer');
+var PageHeader = require('../components/PageHeader');
+var TableContainer = require('../containers/TableContainer');
+var PageFooter = require('../components/PageFooter');
 require('../main.scss');
 
 var App = function(props) {
   return (
     <div>
-      <Header />
-      <Table />
-      <Footer />
+      <PageHeader />
+      <TableContainer />
+      <PageFooter />
     </div>
   )
 };

@@ -1,23 +1,126 @@
-/* Colors */
+/* Colors */ 
 $bar-bk-color: #381F0B;
 $bar-text-color: #FFFFFF;
+$base-color: #000000;
+$accent-color: orange;
+$complimentary-color: #20968b;
 
+body {
+  background: $complimentary-color;
+  margin: 0;
+}
 .bar {
+  margin: 0;
   padding-left: 20px;
   background: $bar-bk-color;
-  color: $bar-text-color;
-  height: 46px;
+  color: $accent-color;
+  height: 48px;
+  font-size: 150%;
 }
 
 .logo {
   height: 42px;
   width: 42px;
-  padding: 5px;
+  border-radius: 20%;
+  border: 1px solid $bar-bk-color;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 .footer {
-  width: 100%;
-  position: absolute;
+  margin: 0;
+  text-align: center;
   bottom: 0;
-  left: 0;
+  width: 98%;
+}
+
+.content {
+  padding: 2% 5%;
+}
+
+.centered {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border: 1px solid $accent-color;
+  border-collapse: collapse;
+  border-collapse: separate;
+  font-size: 110%;
+  background: lighten($accent-color, 40%);
+  caption {
+    border-radius: 10px 10px 0 0;
+    color: $accent-color;
+    text-align: center;
+    background: $bar-bk-color;
+    padding: 10px 0;
+    font-size: 140%;
+  }
+  th {
+    padding: 8px 10px;
+    border: 1px solid lighten($accent-color, 10%);
+    text-align: center;
+    background: lighten($accent-color, 30%);
+    color: $base-color;
+  }
+  tr th:nth-child(2) {
+    text-align: left;
+  }
+  tr:nth-child(even) {
+    background: lighten($accent-color, 40%);
+  }
+  tr:nth-child(even):hover {
+    background: lighten($accent-color, 38%);
+  }
+  tr:nth-child(odd) {
+    background: lighten($complimentary-color, 59%);
+  }
+  tr:nth-child(odd):hover {
+    background: lighten($complimentary-color, 57%);
+  }
+  tr td {
+    border: 1px solid lighten($accent-color, 30%);
+    padding: 5px 10px;
+    text-align: center;
+  }
+  tr td:nth-child(1), tr td:nth-child(2) {
+    text-align: left;
+  }
+  tr td:nth-child(1), th td:nth-child(1) {
+    width: 50px;
+    text-align: center;
+  }
+}
+
+.link {
+  color: darken($complimentary-color, 10%);
+  text-decoration: underline;
+}
+.link:hover {
+  color: lighten($complimentary-color, 10%);
+  text-decoration: underline;
+}
+
+.sort-arrow--button {
+  margin: 0 5px;
+  border: none;
+  background: none;
+  height:35px;
+  width: 30px;
+  overflow: hidden;
+  outline: 0;
+}
+.sort-arrow--img {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  vertical-align: text-bottom;
+}
+
+.messageBox {
+  text-align: center;
+  height: 100px;
+  font-size: 150%;
+  margin-bottom: 20%;
 }
