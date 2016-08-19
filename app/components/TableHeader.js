@@ -8,11 +8,11 @@ var Arrow = function (props) {
   var sortTypeChanged = (props.sort.type !== props.newSortType);
   if  (sortTypeChanged || props.sort.order === '') {
     // default neutral icon (unsorted)
-    sortImageSrc='../images/neutral-arrow.png';
+    sortImageSrc='images/neutral-arrow.png';
   } else if (props.sort.order === 'asc') {
-    sortImageSrc='../images/up-arrow.png';
+    sortImageSrc='images/up-arrow.png';
   } else if (props.sort.order === 'desc') {
-    sortImageSrc='../images/down-arrow.png';
+    sortImageSrc='images/down-arrow.png';
   }
 
   return <img className='sort-arrow--img' src={sortImageSrc} alt='sort arrow'></img>
